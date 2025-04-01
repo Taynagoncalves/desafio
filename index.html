@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornalcuricacas </title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Conheça a Curicaca </h1>
+    <p>A Ave que Protege a Natureza</p>
+</header>
+
+<section>
+
+    <h2>Sobre a Curicaca</h2>
+    <p>A curicaca é uma ave típica de áreas úmidas e regiões alagadas, como campos e pântanos.
+    Com seu canto único e plumagem marcante, essa ave desempenha um papel essencial na preservação do equilíbrio ecológico,
+    ajudando na dispersão de sementes e na regeneração da vegetação. Embora seja uma espécie resistente, a curicaca enfrenta 
+    ameaças devido à destruição de seus habitats naturais e às mudanças climáticas. 
+    Acompanhe nesta reportagem como a curicaca contribui para o meio ambiente e a importância de sua preservação.</p>
+</section>
+
+<section>
+    <h2>Onde as Curicacas Vivem?</h2>
+    <p> A curicaca é encontrada em várias regiões do Brasil, especialmente em áreas alagadas e pantanosas. Seu habitat favorito inclui o Pantanal, as margens de rios e grandes campos alagados, 
+        onde pode facilmente encontrar alimento e áreas para nidificar.
+        A ave prefere ambientes tranquilos, longe da urbanização, mas, com o tempo, algumas curicacas têm se adaptado a áreas mais próximas de cidades.
+        As curicacas são migratórias em algumas regiões e podem se deslocar para outros habitats em busca de alimento durante diferentes épocas do ano.</p>
+
+<section>
+    <br>
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa Interativo das Curicacas</title>
+  
+  <!-- Link para o Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+  <!-- Estilos para o mapa -->
+ 
+  <style>
+    #map {
+      height: 600px;
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Distribuição das Curicacas no Brasil</h2>
+  <p>Veja no mapa abaixo as regiões onde as curicacas são mais comuns.</p>
+
+  <!-- Div para o mapa -->
+  <div id="map"></div>
+
+  <!-- Script para o Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+  <script>
+    // Inicializa o mapa
+    var map = L.map('map').setView([-14.2350, -51.9253], 4); // Posição centralizada no Brasil
+
+    // Adiciona camada de mapa com tiles de um provedor
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Marcadores de regiões onde as curicacas são mais comuns
+    var areasComuns = [
+      { lat: -18.5, lon: -56.1, nome: 'Pantanal' },
+      { lat: -16.5, lon: -56.0, nome: 'Mato Grosso' },
+      { lat: -13.0, lon: -58.0, nome: 'Mato Grosso do Sul' },
+      { lat: -21.0, lon: -55.0, nome: 'Rio Grande do Sul' }
+    ];
+
+    // Adiciona marcadores ao mapa
+    areasComuns.forEach(function(area) {
+      L.marker([area.lat, area.lon])
+        .addTo(map)
+        .bindPopup('<b>' + area.nome + '</b><br>Região comum de curicacas.');
+    });
+  </script>
+
+</body>
+</html>
+<br>
+<br>
+<br>
+
+    <h2>Galeria de Imagens</h2>
+    <div class="galeria">
+        <div>
+            <img src="https://s3.amazonaws.com/media.wikiaves.com.br/images/5181/1815444_4fe3a6fd364e88ff3c78fd85f74472fe.jpg" width="300px" alt=" imagem 1" >
+            <p>CURICACA</p>
+            
+        </div>
+<!--
+        <div>
+            <img src="https://t4.ftcdn.net/jpg/04/93/69/23/360_F_493692347_MOEpOGrDGuwTMZxxoxHwlUEp79JT9E1x.jpg" width="300px" alt="img2">
+            <p>frase...</p>
+        </div>
+
+       <!--<div>
+            <img src="https://s3.animalia.bio/animals/photos/full/original/2541px-plumbeous-ibis-28theristicus-caerulescens29-48116583507.webp" width="00px" alt="img3">
+            <br>
+            <br>
+            <br>
+            <p>frase...</p>
+        </div>
+        <!-->
+
+        <div> 
+            <img src="https://live.staticflickr.com/7149/6546136637_c0d94863f2_b.jpg"width="50px" alt="img4"
+            <p> CURICACA EM VOO </p>
+
+        </div>
+
+        <div>
+            <img src="https://t3.ftcdn.net/jpg/05/94/29/26/360_F_594292636_NaFYbbZ4fQcrcPiE2CkhVMaaeHfEshAl.jpg" width="300px" alt="img5"
+            <p> CURICACA </p>
+       </div>
+</section>
+
+</body>
+</html>
+<section>
+    <h2> Qual é o habitat das Curicacas?</h2>
+    <p> 
+        Habita áreas abertas, como campos, pastos ou regiões alagadas.
+    </p>
+
+    <div
+    <img src="https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2021/06/Curicaca.jpg" width="500px" alt="habitat"
+
+    <img scr="https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2021/06/IMG_2091.jpg" width="=500px" alt="habitat"
+</section>
+<section>
+    <h2>Conservação das Curicacas</h2>
+    <p> As curicacas enfrentam vários desafios para sua sobrevivência, principalmente devido à destruição de seus habitats naturais.
+         A drenagem de áreas alagadas para a agricultura e o crescimento urbano estão reduzindo o espaço disponível para essas aves.
+          Além disso, as mudanças climáticas e a poluição também representam ameaças para a população de curicacas.
+
+        No entanto, várias organizações ambientais estão trabalhando para proteger as áreas de pântano e garantir que as curicacas e outras espécies possam prosperar. 
+        A educação ambiental e os esforços para restaurar ecossistemas são essenciais para garantir um futuro sustentável para essas aves.</p>
+</section>
+<br>
+   <h2> Quais os predadores das curicacas.</h2>
+   <p>
+    <li> Os felinos como a jaguatirica e outros gatos nativos.</li>
+   </p>
+<section>
+    <h2>Como Ajudar</h2>
+    <p>
+        <li> Apoiar projetos de conservação ambiental.</li>
+        <li> Participar de programas de plantio e recuperação de habitats.</li>
+        <li>ornar-se um observador de aves e divulgar informações sobre as curicacas.
+
+        </li>
+        <br>
+    </p>
+</section>
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <p>&copy; .....</p>
+</footer>
+<h2>Entre em Contato e Colabore</h2>
+  <p>Se você tem alguma dúvida ou deseja saber mais sobre as curicacas, entre em contato conosco. Estamos sempre prontos para compartilhar informações e colaborar com outras pessoas e organizações interessadas na preservação da natureza.</p>
+
+  <!-- Formulário de Contato -->
+  <div class="contact-form">
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Seu Nome" required>
+      <input type="email" name="email" placeholder="Seu E-mail" required>
+      <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </div>
+
+  <!-- Seção de Colaboração -->
+  <div class="collaborate">
+    <h3>Colabore Conosco</h3>
+    <p>Ajude-nos a proteger as curicacas e o meio ambiente. Veja como você pode colaborar:</p>
+    <ul>
+      <li><strong>Voluntariado para programas de conservação</strong> – Seja um voluntário em nossos projetos para preservar habitats naturais.</li>
+      <li><strong>Apoio a projetos de recuperação de habitats</strong> – Contribua para restaurar as áreas de vida das curicacas e outras espécies.</li>
+      <li><strong>Participação em eventos de observação de aves</strong> – Junte-se a nós em eventos de observação de aves e aprenda mais sobre a biodiversidade local.</li>
+    </ul>
+    <p>Interessado? <a href="taynagon7302@gmail.com">Entre em contato conosco!</a></p>
+  </div>
+<br>
+<br>
+<br>
+
+
+
+</body>
+</html>
