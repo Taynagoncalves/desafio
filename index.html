@@ -59,14 +59,14 @@
   <!-- Div para o mapa -->
   <div id="map"></div>
 
-  <!-- Script para o Leaflet -->
+
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   
   <script>
     // Inicializa o mapa
     var map = L.map('map').setView([-14.2350, -51.9253], 4); // Posição centralizada no Brasil
 
-    // Adiciona camada de mapa com tiles de um provedor
+ 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
@@ -93,54 +93,52 @@
 <br>
 <br>
 
-    <h2>Galeria de Imagens</h2>
-    <div class="galeria">
-        <div>
-            <img src="https://s3.amazonaws.com/media.wikiaves.com.br/images/5181/1815444_4fe3a6fd364e88ff3c78fd85f74472fe.jpg" width="300px" alt=" imagem 1" >
-            <p>CURICACA</p>
-            
-        </div>
-<!--
-        <div>
-            <img src="https://t4.ftcdn.net/jpg/04/93/69/23/360_F_493692347_MOEpOGrDGuwTMZxxoxHwlUEp79JT9E1x.jpg" width="300px" alt="img2">
-            <p>frase...</p>
-        </div>
+<h2>Galeria de Imagens</h2>
 
-       <!--<div>
-            <img src="https://s3.animalia.bio/animals/photos/full/original/2541px-plumbeous-ibis-28theristicus-caerulescens29-48116583507.webp" width="00px" alt="img3">
-            <br>
-            <br>
-            <br>
-            <p>frase...</p>
-        </div>
-        <!-->
+<section class="galeria">
+  <div class="galeria__item">
+    <img src="https://s3.amazonaws.com/media.wikiaves.com.br/images/5181/1815444_4fe3a6fd364e88ff3c78fd85f74472fe.jpg" 
+         alt="Curicaca" class="galeria__image" />
+    <p class="galeria__caption">Curicaca olhando p nada, pensando em tudo.</p>
+  </div>
 
-        <div> 
-            <img src="https://live.staticflickr.com/7149/6546136637_c0d94863f2_b.jpg"width="50px" alt="img4"
-            <p> CURICACA EM VOO </p>
+  <div class="galeria__item">
+    <img src="https://live.staticflickr.com/7149/6546136637_c0d94863f2_b.jpg" 
+         alt="Curicaca em voo" class="galeria__image" />
+    <p class="galeria__caption">Curicaca em voo.</p>
+  </div>
 
-        </div>
+  <div class="galeria__item">
+    <img src="https://t3.ftcdn.net/jpg/05/94/29/26/360_F_594292636_NaFYbbZ4fQcrcPiE2CkhVMaaeHfEshAl.jpg" 
+         alt="Curicaca" class="galeria__image" />
+    <p class="galeria__caption"> Curicaca na Ativa.</p>
+  </div>
 
-        <div>
-            <img src="https://t3.ftcdn.net/jpg/05/94/29/26/360_F_594292636_NaFYbbZ4fQcrcPiE2CkhVMaaeHfEshAl.jpg" width="300px" alt="img5"
-            <p> CURICACA </p>
-       </div>
+  <div class="galeria__item">
+    <img src="https://media.istockphoto.com/id/1321752792/pt/foto/close-up-of-the-bandurria-ibis-on-the-shore-of-lake-nahuel-huapi-bariloche-patagonia.jpg?s=1024x1024&w=is&k=20&c=saB01saA2JhQO9FLStgAyOKcMxty12Uk6B6P_6CzHKE="
+    alt="curicaca fofa" class="galeria__image"/>
+    <p class="galeria__caption"> Curicaca fofinha.</p>
+  </div>
+  
 </section>
 
+ <h2> Videos informativos</h2>
+ <p> clique e assista</p>
 </body>
 </html>
+<br>
+
 <section>
     <h2> Qual é o habitat das Curicacas?</h2>
     <p> 
         Habita áreas abertas, como campos, pastos ou regiões alagadas.
     </p>
+    
 
-    <div
-    <img src="https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2021/06/Curicaca.jpg" width="500px" alt="habitat"
 
-    <img scr="https://www.ufrgs.br/faunadigitalrs/wp-content/uploads/2021/06/IMG_2091.jpg" width="=500px" alt="habitat"
+
+
 </section>
-<section>
     <h2>Conservação das Curicacas</h2>
     <p> As curicacas enfrentam vários desafios para sua sobrevivência, principalmente devido à destruição de seus habitats naturais.
          A drenagem de áreas alagadas para a agricultura e o crescimento urbano estão reduzindo o espaço disponível para essas aves.
@@ -170,32 +168,55 @@
 <br>
 <br>
 <footer>
-    <p>&copy; .....</p>
+    <p>&copy; 2025 - Mundo das Curicacas</p>
 </footer>
-<h2>Entre em Contato e Colabore</h2>
-  <p>Se você tem alguma dúvida ou deseja saber mais sobre as curicacas, entre em contato conosco. Estamos sempre prontos para compartilhar informações e colaborar com outras pessoas e organizações interessadas na preservação da natureza.</p>
-
-  <!-- Formulário de Contato -->
-  <div class="contact-form">
-    <form action="#" method="post">
-      <input type="text" name="name" placeholder="Seu Nome" required>
-      <input type="email" name="email" placeholder="Seu E-mail" required>
-      <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
-      <button type="submit">Enviar Mensagem</button>
-    </form>
+<br>
+<div class="contact-container">
+    <h2>Entre em Contato e Colabore</h2>
+    <p>Se você tem alguma dúvida ou deseja saber mais sobre as curicacas, entre em contato conosco. Estamos sempre prontos para compartilhar informações e colaborar com outras pessoas e organizações interessadas na preservação da natureza.</p>
+  
+    <div class="contact-form">
+      <form action="#" method="post">
+          <div class="input-group">
+              <input type="text" name="name" placeholder="Seu Nome" required>
+          </div>
+          <div class="input-group">
+              <input type="email" name="email" placeholder="Seu E-mail" required>
+          </div>
+          <div class="input-group">
+              <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+          </div>
+          <button type="submit">Enviar Mensagem</button>
+      </form>
+    </div>
   </div>
-
-  <!-- Seção de Colaboração -->
-  <div class="collaborate">
+  
+<br>
+<br>
+<br>
+<section class="collaborate">
     <h3>Colabore Conosco</h3>
     <p>Ajude-nos a proteger as curicacas e o meio ambiente. Veja como você pode colaborar:</p>
-    <ul>
-      <li><strong>Voluntariado para programas de conservação</strong> – Seja um voluntário em nossos projetos para preservar habitats naturais.</li>
-      <li><strong>Apoio a projetos de recuperação de habitats</strong> – Contribua para restaurar as áreas de vida das curicacas e outras espécies.</li>
-      <li><strong>Participação em eventos de observação de aves</strong> – Junte-se a nós em eventos de observação de aves e aprenda mais sobre a biodiversidade local.</li>
-    </ul>
-    <p>Interessado? <a href="taynagon7302@gmail.com">Entre em contato conosco!</a></p>
-  </div>
+    
+    <div class="collaborate__items">
+      <article class="collaborate__item">
+        <h4>Voluntariado para programas de conservação</h4>
+        <p>Seja um voluntário em nossos projetos para preservar habitats naturais.</p>
+      </article>
+      
+      <article class="collaborate__item">
+        <h4>Apoio a projetos de recuperação de habitats</h4>
+        <p>Contribua para restaurar as áreas de vida das curicacas e outras espécies.</p>
+      </article>
+      
+      <article class="collaborate__item">
+        <h4>Participação em eventos de observação de aves</h4>
+        <p>Junte-se a nós em eventos de observação de aves e aprenda mais sobre a biodiversidade local.</p>
+      </article>
+    </div>
+    
+    <p>Interessado? <a href="gmail:taynagon7302@gmail.com" class="collaborate__link">Entre em contato conosco!</a></p>
+  </section>
 <br>
 <br>
 <br>
